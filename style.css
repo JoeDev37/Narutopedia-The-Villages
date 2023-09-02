@@ -1,0 +1,141 @@
+:root {
+  --normal-txt: #fff;
+  --input: black;
+  --input-txt: rgb(255, 158, 46);
+  --place: rgb(255, 158, 46);
+  --input-padding: 10px;
+  --curve: 7px;
+  --second: 3s;
+  --input-fonts: 'Dancing Script';
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(logo/naruto17.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(3.7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.child-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-2 {
+  padding: var(--input-padding);
+  background-color: var(--input);
+  color: var(--input-txt);
+  border: none;
+  border-radius: var(--curve);
+  font-family: 'Black Ops One';
+  margin-left: 30%;
+}
+
+.parent {
+  background-image: url(logo/naruto20.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+}
+
+.user {
+  display: block;
+  margin-bottom: 10%;
+  background-color: var(--input);
+  color: var(--input-txt);
+  padding: var(--input-padding);
+  border: none;
+  outline: none;
+  border-radius: var(--curve);
+  font-family: var(--input-fonts);
+}
+
+.pass {
+  display: block;
+  margin-bottom: 10%;
+  background-color: var(--input);
+  color: var(--input-txt);
+  padding: var(--input-padding);
+  border: none;
+  outline: none;
+  border-radius: var(--curve);
+  font-family: var(--input-fonts);
+}
+
+input::placeholder {
+  color: var(--place);
+}
+
+#btn-1 {
+  padding: var(--input-padding);
+  background-color: var(--input);
+  color: var(--input-txt);
+  border: none;
+  border-radius: var(--curve);
+  font-family: 'Black Ops One';
+}
+
+#s-1 {
+  animation: s-1 var(--second) infinite;
+}
+
+@keyframes s-1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+#s-2 {
+  animation: s-2 var(--second) infinite;
+}
+
+@keyframes s-2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .parent {
+    background-image: url(logo/naruto20.jpg);
+    background-size: cover;
+    background-position: right;
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+
+
+
+
